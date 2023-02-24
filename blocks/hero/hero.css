@@ -10,7 +10,7 @@ main .hero-container {
   
 main .hero {
     position: relative;
-    /* padding: 32px; */
+    padding: 32px;
     min-height: 300px;
 }
 
@@ -21,6 +21,9 @@ main .hero h1 {
     color: white;
 }
 
+main .hero a {
+    color: white;
+}
 
 main .hero picture {
     position: absolute;
