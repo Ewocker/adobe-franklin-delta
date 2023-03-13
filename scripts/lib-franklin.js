@@ -163,7 +163,9 @@ export async function fetchPlaceholders(prefix = 'default') {
           .then((json) => {
             const placeholders = {};
             json.data.forEach((placeholder) => {
-              placeholders[toCamelCase(placeholder.Key)] = placeholder.Text;
+              // remove camelcase for my own testing
+              // placeholders[toCamelCase(placeholder.Key)] = placeholder.Text;
+              placeholders[placeholder.Key] = placeholder.Text;
             });
             window.placeholders[prefix] = placeholders;
             resolve();
